@@ -1,0 +1,211 @@
+{
+  "mode": "ros2",
+  "timing_profile": {
+    "enabled": false
+  },
+  "passed": true,
+  "checks": {
+    "nodes_ready": true,
+    "one_cpu_per_node": true,
+    "compiled_controller_blocks": true,
+    "no_process_error": true,
+    "diagnostics_exported": true,
+    "no_safety_stop": true,
+    "all_nodes_recorded": true,
+    "both_motor_outputs": true,
+    "both_sensory_streams": true,
+    "repeated_movement": true,
+    "no_mechanical_stops": true,
+    "no_detected_spike_loss": true
+  },
+  "error": null,
+  "timing_passed": false,
+  "timing_checks": {
+    "full_model_progress": true,
+    "callback_within_budget": false,
+    "compute_within_budget": false,
+    "steps_completed_by_deadline": false,
+    "spike_delivery_within_budget": true
+  },
+  "duration_seconds": 8.0,
+  "dt_ms": 0.1,
+  "timer_ms": 1.0,
+  "substeps_per_update": 10,
+  "neurons_per_population": 1,
+  "total_neurons": 4,
+  "snnlab_ref": "d2c7e82c1460fb3ee6e0f473331f0c3fe4db05fb",
+  "cpu_allocation": {
+    "flexor": 0,
+    "extensor": 1,
+    "plant": 2,
+    "recorder": 3
+  },
+  "observed_cpu_affinity": {
+    "flexor": [
+      0
+    ],
+    "extensor": [
+      1
+    ],
+    "plant": [
+      2
+    ],
+    "recorder": [
+      3
+    ]
+  },
+  "controller_execution": {
+    "flexor": {
+      "prepared_stream": true,
+      "compile_mode": "default",
+      "execution_path": "compiled_blocks",
+      "block_steps": 10,
+      "warm_input_steps": 10,
+      "warmup_seconds": 7.803428965999956,
+      "torch_version": "2.10.0+cpu"
+    },
+    "extensor": {
+      "prepared_stream": true,
+      "compile_mode": "default",
+      "execution_path": "compiled_blocks",
+      "block_steps": 10,
+      "warm_input_steps": 10,
+      "warmup_seconds": 7.846066187999895,
+      "torch_version": "2.10.0+cpu"
+    }
+  },
+  "model_seconds_per_node": {
+    "flexor": 8.0,
+    "extensor": 8.0,
+    "plant": 8.0
+  },
+  "simulated_seconds_per_wall_second": 1.0,
+  "joint_direction_reversals": 29,
+  "mechanical_stop_hits": 0,
+  "angle_range_rad": [
+    -0.42567533264432034,
+    0.47132292524434966
+  ],
+  "motor_spikes": {
+    "flexor": 162,
+    "extensor": 167
+  },
+  "sensory_spikes": {
+    "flexor": 216,
+    "extensor": 245
+  },
+  "update_compute_ms": {
+    "flexor": {
+      "n": 8000,
+      "median": 0.5009565,
+      "p95": 0.5981103999999999,
+      "maximum": 2.579281
+    },
+    "extensor": {
+      "n": 8000,
+      "median": 0.49788,
+      "p95": 0.5927652499999999,
+      "maximum": 2.700838
+    },
+    "plant": {
+      "n": 8000,
+      "median": 0.051501,
+      "p95": 0.10461609999999996,
+      "maximum": 0.284219
+    }
+  },
+  "full_callback_ms": {
+    "flexor": {
+      "n": 8000,
+      "median": 0.5164759999999999,
+      "p95": 0.6165525499999999,
+      "maximum": 2.680075
+    },
+    "extensor": {
+      "n": 8000,
+      "median": 0.513326,
+      "p95": 0.61284075,
+      "maximum": 2.790642
+    },
+    "plant": {
+      "n": 8000,
+      "median": 0.0625925,
+      "p95": 0.11925799999999999,
+      "maximum": 0.337867
+    }
+  },
+  "deadline_lateness_ms": {
+    "flexor": {
+      "n": 8000,
+      "median": -108.188567,
+      "p95": -0.29026080000000004,
+      "maximum": 7.556919000000001
+    },
+    "extensor": {
+      "n": 8000,
+      "median": -108.1910825,
+      "p95": -0.28940230000000006,
+      "maximum": 5.774938
+    },
+    "plant": {
+      "n": 8000,
+      "median": -108.58499499999999,
+      "p95": -0.6821991000000001,
+      "maximum": -0.303643
+    }
+  },
+  "callback_overruns": {
+    "flexor": 7,
+    "extensor": 7,
+    "plant": 0
+  },
+  "schedule": "Absolute releases from shared epoch; catch up without dropping windows or resetting deadlines; stop if start lag exceeds max_lag_ms",
+  "max_lag_ms": 20.0,
+  "stop_reasons": {
+    "flexor": "completed",
+    "extensor": "completed",
+    "plant": "completed"
+  },
+  "spike_delivery_ms": {
+    "flexor": {
+      "n": 383,
+      "median": 0.499006,
+      "p95": 0.6444981,
+      "maximum": 1.458384
+    },
+    "extensor": {
+      "n": 407,
+      "median": 0.518467,
+      "p95": 0.6756135,
+      "maximum": 1.394724
+    },
+    "plant": {
+      "n": 329,
+      "median": 0.16076,
+      "p95": 0.24928219999999998,
+      "maximum": 0.915952
+    }
+  },
+  "compute_overruns": {
+    "flexor": 7,
+    "extensor": 4,
+    "plant": 0
+  },
+  "step_deadline_misses": {
+    "flexor": 56,
+    "extensor": 44,
+    "plant": 0
+  },
+  "late_spikes": {
+    "flexor": 0,
+    "extensor": 0,
+    "plant": 0
+  },
+  "missing_spikes": {
+    "flexor": 0,
+    "extensor": 0,
+    "plant": 0
+  },
+  "spike_age_budget_ms": 5.0,
+  "timing_scope": "Live wall-clock run. Full callbacks include model work, spike publication and writes to preallocated diagnostic buffers. JSON conversion and diagnostic publication occur after the shared control interval. Deadline lateness uses full callback duration, not compute alone. ROS input callbacks execute while waiting between absolute releases; their contention appears in start lag and delivery age. Inputs enter at the first substep and outputs publish after the window. Delivery age excludes pre-publication buffering. Late spikes are still applied."
+}

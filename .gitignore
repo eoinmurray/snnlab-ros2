@@ -46,7 +46,17 @@ htmlcov/
 # Scratch files, including the private reference checkout
 /work/
 
-# Keep only the latest README figure and summary; raw runs stay local
+# Retain the two figures and reports, but keep raw recordings and logs local
 /artifacts/*
-!/artifacts/experiment.png
-!/artifacts/summary.json
+!/artifacts/basic/
+!/artifacts/ros2/
+/artifacts/basic/*
+/artifacts/ros2/*
+!/artifacts/basic/experiment.png
+!/artifacts/basic/summary.json
+!/artifacts/ros2/experiment.png
+!/artifacts/ros2/summary.json
+
+
+# Optional wall-clock versus thread CPU timing breakdown
+!/artifacts/ros2/timing_profile.png

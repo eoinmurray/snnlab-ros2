@@ -1,0 +1,60 @@
+{
+  "snnlab_version": "0.24.1",
+  "feedback": true,
+  "dt_ms": 0.1,
+  "simulated_seconds": 8.0,
+  "setup_seconds": 7.133269820999999,
+  "loop_wall_seconds": 54.941225832999976,
+  "simulated_seconds_per_wall_second": 0.1456101475477977,
+  "neuron_order": [
+    "flexor motor",
+    "flexor slow",
+    "extensor motor",
+    "extensor slow"
+  ],
+  "spikes": [
+    162,
+    43,
+    167,
+    46
+  ],
+  "sensory_spikes": [
+    215,
+    243
+  ],
+  "motor_dominance_handoffs": 29,
+  "joint_direction_reversals": 29,
+  "angle_range_rad": [
+    -0.42321757058914067,
+    0.46772275679564945
+  ],
+  "mechanical_stop_hits": 0,
+  "loop_compute_ms": {
+    "median": 0.674111,
+    "p95": 0.75075105,
+    "maximum": 46.49489
+  },
+  "over_budget_steps": 80000,
+  "timing_scope": "Unpaced CPU simulation: measured compute versus simulated step budget; no ROS or hard real-time guarantee",
+  "mode": "basic",
+  "neurons_per_population": 1,
+  "total_neurons": 4,
+  "controller_execution": {
+    "flexor": {
+      "compile_mode": "default",
+      "execution_path": "kernel_loop",
+      "block_steps": 1,
+      "warm_input_steps": 1,
+      "warmup_seconds": 4.600780618000044,
+      "torch_version": "2.10.0+cpu"
+    },
+    "extensor": {
+      "compile_mode": "default",
+      "execution_path": "kernel_loop",
+      "block_steps": 1,
+      "warm_input_steps": 1,
+      "warmup_seconds": 0.13703846099997463,
+      "torch_version": "2.10.0+cpu"
+    }
+  }
+}

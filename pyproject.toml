@@ -1,0 +1,31 @@
+[project]
+name = "snnlab-ros2"
+version = "0.1.0"
+description = "A spiking joint controller, standalone and over ROS 2 Humble"
+requires-python = ">=3.10"
+dependencies = [
+  "snnlab @ git+https://github.com/eoinmurray/snnlab.git@d2c7e82c1460fb3ee6e0f473331f0c3fe4db05fb",
+  "torch==2.10.0",
+  "torchvision==0.25.0",
+  "setuptools==84.2.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]

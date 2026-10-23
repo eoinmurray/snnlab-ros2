@@ -3,6 +3,7 @@ work
 artifacts
 **/__pycache__
 .venv
+.ruff_cache
 build
 install
 log
