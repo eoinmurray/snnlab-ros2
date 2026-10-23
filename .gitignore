@@ -1,8 +1,52 @@
+# Python environments, bytecode and package builds
+.venv/
+venv/
 __pycache__/
 *.py[cod]
-.venv/
-.env
+*.egg-info/
+.eggs/
+dist/
+
+# ROS / colcon build products and local recordings
 build/
 install/
 log/
+.ros/
+*.db3
+*.db3-shm
+*.db3-wal
+*.mcap
+*.bag
+
+# Test, lint and coverage caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Local settings and secrets; example configuration may be shared
+.env
+.env.*
+!.env.example
+!.env.sample
+.idea/
+.vscode/
 .DS_Store
+._*
+*.swp
+*.swo
+*~
+*.log
+
+# Scratch files, including the private reference checkout
+/work/
+
+# Keep only the latest README figure and summary; raw runs stay local
+/artifacts/*
+!/artifacts/experiment.png
+!/artifacts/summary.json

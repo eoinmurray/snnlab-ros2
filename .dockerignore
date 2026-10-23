@@ -1,0 +1,9 @@
+.git
+work
+artifacts
+**/__pycache__
+.venv
+build
+install
+log
+.env
